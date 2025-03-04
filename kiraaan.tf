@@ -1,10 +1,9 @@
 provider "aws" {
-  region = "ap-south-2"
+  region = "ap-south-2"  # Updated AWS region
 }
 
-resource "aws_s3_bucket" "kirans3" {
-  bucket = "kiran-public-bucket"
-  tags = {
-    Name = "kiran-public-bucket"
-  }
+# Create an S3 bucket
+resource "aws_s3_bucket" "ccit_s3" {
+  bucket = "ccit-public-bucket"
+  tags = { Name = "ccit-public-bucket" }
 }
